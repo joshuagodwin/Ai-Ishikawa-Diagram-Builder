@@ -41,7 +41,7 @@ async def init_cause_categories(problem: Problem):
         print(causes_list)
         return causes_list
     else:
-        return 'no function was called'
+        return {}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
